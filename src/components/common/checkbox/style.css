@@ -1,0 +1,107 @@
+.checkbox-container {
+    height: 32px;
+    width: 240px;
+    display: flex;
+    align-items: center;
+}
+
+.custom-checkbox {
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: rgba(0,0,0,0.9019607843137255);
+    font-size: 13px;
+    padding-left: 26px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.custom-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background-color: #fff;
+    border-radius: 2px;
+    border: 1px solid rgb(158, 158, 158);
+}
+
+.custom-checkbox:hover input ~ .checkmark {
+    background-color: #fff;
+    border: 1px solid #000;
+}
+
+.custom-checkbox:hover input:checked ~ .checkmark {
+    border: 1px solid rgb(58, 141, 237);
+}
+
+.custom-checkbox input:focus ~ .checkmark  {
+    border: 1px solid rgb(36, 93, 187);
+}
+
+.custom-checkbox input:checked ~ .checkmark {
+    background-color: rgb(51, 125, 233);
+    border: 1px solid rgb(51, 125, 233);
+}
+
+.custom-checkbox input:disabled ~ .checkmark,
+.custom-checkbox:hover input:disabled:checked ~ .checkmark {
+    border: 1px solid rgb(206, 206, 206);
+}
+
+.custom-checkbox input:disabled:checked ~ .checkmark,
+.custom-checkbox input:disabled:checked ~ .checkmark:after,
+.custom-checkbox:hover input:disabled:checked ~ .checkmark,
+.custom-checkbox:hover input:disabled:checked ~ .checkmark:after {
+    background-color: rgb(206, 206, 206);
+}
+
+.custom-checkbox input:checked ~ .checkmark:after {
+    display: block;
+    background: rgb(51, 125, 233);
+}
+
+.custom-checkbox:hover input:checked ~ .checkmark,
+.custom-checkbox:hover input:checked ~ .checkmark:after {
+    background: rgb(58, 141, 237);
+}
+
+.custom-checkbox input:focus:checked ~ .checkmark,
+.custom-checkbox input:focus:checked ~ .checkmark:after {
+    background: rgb(36, 93, 187);
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.custom-checkbox .checkmark:after {
+    left: 5px;
+    top: 1px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.disabled {
+    color: rgb(153, 153, 153);
+}

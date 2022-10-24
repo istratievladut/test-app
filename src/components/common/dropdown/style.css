@@ -1,0 +1,101 @@
+.dropdown-container {
+    height: 30px;
+    border: 1px solid rgba(0,0,0,0.12156862745098039);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: montserrat, sans-serif;
+    position: relative;
+    color: rgba(0,0,0,0.9019607843137255);
+    cursor: pointer;
+}
+
+.dropdown-container:hover {
+    border: 1px solid rgb(91, 91, 91);
+}
+
+.dropdown-container:focus {
+    border: 1px solid rgb(113, 155, 212);
+}
+
+.dropdown-container:active {
+    border: 1px solid rgb(90, 167, 240);
+}
+
+.dropdown-container > .dropdown-value-input {
+    border: none;
+    font-family: montserrat, sans-serif;
+    cursor: pointer;
+}
+
+.dropdown-container > .dropdown-value-input:focus {
+    outline: none;
+}
+
+.dropdown-container > .options-container {
+    position: absolute;
+    top: 37px;
+    left: 0;
+    width: 238px;
+    border-radius: 3px;
+    background: #fff;
+    z-index: 6;
+}
+
+.options-container > .disabled {
+    color: rgb(170, 170, 170);
+}
+
+.is-dropdown-open {
+    border: 1px solid rgb(90, 167, 240);
+}
+
+.options-container > .dropdown-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
+
+.options-container > .dropdown-item:hover {
+    background-color: rgb(242, 242, 242);
+}
+
+.options-container > .dropdown-item:focus {
+    background-color: rgb(204, 204, 204);
+}
+
+.options-container > .dropdown-item:active {
+    background-color: rgb(229, 229, 229);
+}
+
+.options-container > .dropdown-item > .disabled {
+    color: rgb(153, 153, 153);
+}
+
+.dropdown-container > .clear-button {
+    filter: invert(14%) sepia(1%) saturate(6971%) hue-rotate(21deg) brightness(84%) contrast(70%);
+}
+
+.dropdown-container > .clear-button:hover {
+    filter: invert(49%) sepia(0%) saturate(27%) hue-rotate(168deg) brightness(94%) contrast(92%);;
+}
+
+.dropdown-container > .clear-button:active {
+    filter: invert(0%) sepia(100%) saturate(0%) hue-rotate(253deg) brightness(102%) contrast(106%);
+}
+
+.dropdown-container > .show-options-button {
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+}
+
+.dropdown-container > .show-options-button:hover {
+    background-color: rgb(242, 242, 242);
+}
+
+.dropdown-container > .show-options-button:active {
+    background-color: rgb(229, 229, 229);
+}

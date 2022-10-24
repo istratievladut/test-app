@@ -1,0 +1,16 @@
+.radio-button {
+    height: 32px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 13px;
+    color: rgba(0,0,0,0.9019607843137255);
+    letter-spacing: 0;
+}
+
+.radio-button input {
+    margin: 0 8px 0 0;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}

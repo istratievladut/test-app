@@ -1,0 +1,29 @@
+.custom-input {
+    border: 1px solid rgba(0,0,0,0.12156862745098039);
+}
+
+.custom-input:hover {
+    border: 1px solid rgb(91, 91, 91);
+}
+
+.custom-input:focus {
+    border: 1px solid rgb(113, 155, 212);
+    outline: none;
+}
+
+.custom-input:active {
+    border: 1px solid rgb(90, 167, 240);
+}
+
+.custom-input:disabled {
+    border: 1px solid rgb(170, 170, 170);
+    color: rgb(170, 170, 170);
+    background: none;
+    cursor: not-allowed;
+}
+
+.read-only:disabled {
+    color: black;
+    cursor: pointer;
+    background-color: rgb(247, 247, 247);
+}
